@@ -16,7 +16,7 @@
 
         <p><input type="radio" name="Sexo" id="ifem" value="F"> <label for="ifem"> Feminino</label></p>
     </fieldset>
-    
+
     <form action="cadastro.php" method="get" autocomplete="on">
     <fieldset >
 
@@ -36,6 +36,25 @@
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p> Foto do perfil <label for="ifoto"></label>
+        <input type="file" name="foto" id="ifoto"></p>
+
+        <p> Cor: <label for="icor"></label>
+            <input type="color" name="cor" id="icor" value="#134679">
+        </p>
+
+        <p> Nível: <label for="inivel" ></label>
+           <input type="range" name="nivel" id="inivel" min="1" max="5" value="4">
+        </p>
+
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+
+    </form>
 </form>
 </body>
 </html>
